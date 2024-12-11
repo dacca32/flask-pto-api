@@ -1,9 +1,13 @@
 import os
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 class Config:
-    JWT_SECRET_KEY = 'qwertyuioplkjhgfdsazxcvbnm'
-    SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL') or 'postgresql://scot:password123!@localhost:5432/pto_db'
-    JWT_BLACKLIST_TOKEN_CHECKS = ['access', 'refresh']
-    SQLALCHEMY_TRACK_MODIFICATIONS = False
-    JWT_BLACKLIST_ENABLED = True
-    FLASK_DEBUG = True
+    JWT_SECRET_KEY = os.getenv('SECRET_KEY')
+    SQLALCHEMY_DATABASE_URI = os.getenv('SQLALCHEMY_DATABASE_URI')
+    JWT_BLACKLIST_TOKEN_CHECKS = os.getenv('JWT_BLACKLIST_TOKEN_CHECKS')
+    SQLALCHEMY_TRACK_MODIFICATIONS = os.getenv('SQLALCHEMY_TRACK_MODIFICATIONS')
+    JWT_BLACKLIST_ENABLED = os.getenv('JWT_BLACKLIST_ENABLEDS')
+    FLASK_DEBUG = os.getenv('FLASK_DEBUG')
