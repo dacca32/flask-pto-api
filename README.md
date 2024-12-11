@@ -29,8 +29,8 @@ $ flask db migrate
 $ flask db upgrade
 ```
 
-The ‘flask db init’ command initializes a new migration environment. It creates a "migrations" directory in your Flask project if it doesn't exist already. This directory will be used to store migration scripts that track changes to the database schema over time. 
+The **‘flask db init’** command initializes a new migration environment. It creates a "migrations" directory in your Flask project if it doesn't exist already. This directory will be used to store migration scripts that track changes to the database schema over time. 
 
-The ‘flask db migrate’ command generates an automatic migration script based on the changes detected in the models (data models or database tables) of your Flask application. It analyzes the differences between the current state of the database and the state defined by the models and creates a migration script to apply those changes. 
+The **‘flask db migrate’** command generates an automatic migration script based on the changes detected in the models (data models or database tables) of your Flask application. It analyzes the differences between the current state of the database and the state defined by the models and creates a migration script to apply those changes. 
 
-The ‘flask db upgrade’ command applies the changes specified in the migration scripts to the actual database. It brings the database schema up to date with the latest version defined by the models. This command is typically run after ‘flask db migrate’ to execute the generated migration script. You generally want to run ‘flask db migrate’ and ‘flask db upgrade’ any time you make changes to your data models.
+The **‘flask db upgrade’** command applies the changes specified in the migration scripts to the actual database. It brings the database schema up to date with the latest version defined by the models. This command is typically run after ‘flask db migrate’ to execute the generated migration script. You generally want to run ‘flask db migrate’ and ‘flask db upgrade’ any time you make changes to your data models.
