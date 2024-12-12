@@ -12,15 +12,15 @@ $ source venv\bin\activate # with PowerShell, use ./venv/Scripts/activate.ps1
 $ pip install Flask Flask-SQLAlchemy Flask-JWT-Extended Flask-Migrate
 ```
 
-Here we install “Flask”, “Flask-SQLAlchemy”, “Flask-JWT-Extended", and “Flask-Migrate”. These packages will be used to create the backbone of our API. The latest versions provided by pip at the time of this tutorial are Flask 3.0, Flask-JWT-Extended 4.5.3, Flask-Migrate 4.0.5, and FlaskSQLAlchemy 3.1.1.
+Here we install “Flask”, “Flask-SQLAlchemy”, “Flask-JWT-Extended", and “Flask-Migrate”. These packages will be used to create the backbone of our API. The latest versions provided by pip at the time of this being built are Flask 3.0, Flask-JWT-Extended 4.5.3, Flask-Migrate 4.0.5, and FlaskSQLAlchemy 3.1.1.
 
 * Flask is a web framework for Python that provides a lightweight and modular structure for rapid REST API development.
 * Flask-SQLAlchemy is an extension for Flask that simplifies database integration by providing SQLAlchemy support from within Python.
-* Flask-JWT-Extended is an extension for Flask that adds support for JSON Web Tokens (JWT), allowing user authentication and authorization. Flask-Migrate is an extension for Flask that integrates Alembic, a database migration framework. This will automate the process of managing database schema changes as your Flask application grows. 
+* Flask-JWT-Extended is an extension for Flask that adds support for JSON Web Tokens (JWT), allowing user authentication and authorization. Flask-Migrate is an extension for Flask that integrates Alembic, a database migration framework. This will automate the process of managing database schema changes as the application grows. 
 
 ## Database Initialization and Models
 
-Now that our app.py file is created, it is time to develop the models for our API. In a Flask application, a data model typically refers to the representation of our application's data structure using Flask-SQLAlchemy. Models are defined as Python classes, each representing a table in the database, and they include attributes that map to the table's columns. 
+A data model typically refers to the representation of the application's data structure using Flask-SQLAlchemy. Models are defined as Python classes, each representing a table in the database, and they include attributes that map to the table's columns. 
 
 Now that we are here, it is time to initialize our Flask database. In your terminal, run the following commands:
 ```
