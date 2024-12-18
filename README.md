@@ -7,8 +7,10 @@ $ cd flask-pto-api
 
 We will then initialize our virtual environment and install the necessary packages. We will use a package manager called “pip” to download these packages. Pip is a package within Python that can download packages from an external repository.
 ```
+$ pip install pipenv
 $ python -m venv venv 
-$ source venv\bin\activate # with PowerShell, use ./venv/Scripts/activate.ps1
+$ source venv\bin\activate
+$ pipenv shell
 $ pip install Flask Flask-SQLAlchemy Flask-JWT-Extended Flask-Migrate
 ```
 
