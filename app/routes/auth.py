@@ -3,6 +3,7 @@ from datetime import timedelta
 from ..models import db, User
 from ..extensions import create_access_token, jwt_required, get_jwt
 
+
 auth_bp = Blueprint('auth', __name__)
 
 @auth_bp.route('/register', methods=['POST'])
